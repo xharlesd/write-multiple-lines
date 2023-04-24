@@ -24,4 +24,7 @@ with open("mylife.txt", "w") as input_file:
             continue
 
         # if no
-        # exit
+        elif yes_or_no.lower() == "n":
+            print("Thanks for using my program!")
+            exit()
+        
