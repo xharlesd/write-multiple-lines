@@ -1,1 +1,6 @@
-12y12ynn
+Enter line: ray
+Are there more lines (y/n) ? y
+Enter line: allessandra
+Are there more lines (y/n) ? y
+Enter line: rayyyy
+Are there more lines (y/n) ? n

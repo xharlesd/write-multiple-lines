@@ -11,13 +11,13 @@ with open("mylife.txt", "w") as input_file:
         user_input = input("Enter line: ")
 
         # write the input to mylife.txt
-        input_file.write(str(user_input))
+        input_file.write("Enter line: " + str(user_input) + "\n")
     
         # ask the user if he/she wants to add more lines
-        yes_or_no = input("Are there more lines (y/n) ? ")
+        yes_or_no = input("Are there more lines (y/n)? ")
 
         # write the input to mylife.txt
-        input_file.write(str(yes_or_no))
+        input_file.write("Are there more lines (y/n)? " + str(yes_or_no) + "\n")
 
         # if yes
         if yes_or_no.lower() == "y":
@@ -27,4 +27,5 @@ with open("mylife.txt", "w") as input_file:
         elif yes_or_no.lower() == "n":
             print("Thanks for using my program!")
             exit()
+
         
