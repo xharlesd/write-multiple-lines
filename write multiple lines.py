@@ -4,8 +4,8 @@
 
 # open mylife.txt (write)
 with open("mylife.txt", 'w') as input_file:
-
-    """"""
+    while True:
+        """"""
     # create a loop
     # ask for user input
     # write the input to mylife.txt
