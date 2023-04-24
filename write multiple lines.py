@@ -10,11 +10,11 @@ with open("mylife.txt", 'w') as input_file:
 
         # Ask for user input
         user_input = input =("Enter line: ")
-        
+
+        # write the input to mylife.txt
+        input_file.write(str(user_input))
         """"""
     
-        
-    # write the input to mylife.txt
     # add more lines
     # write the input to mylife.txt
     # if yes
