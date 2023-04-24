@@ -28,4 +28,8 @@ with open("mylife.txt", "w") as input_file:
             print("Thanks for using my program!")
             exit()
 
+        # if the user failed to enter y or n
+        else:
+            print("ERROR! Invalid input. Please choose only between y or n. ")
+
         
