@@ -1,6 +1,2 @@
-Enter line: ray
-Are there more lines (y/n) ? y
-Enter line: allessandra
-Are there more lines (y/n) ? y
-Enter line: rayyyy
-Are there more lines (y/n) ? n
+Enter line: rayyyyyyyyy
+Are there more lines (y/n)? r
