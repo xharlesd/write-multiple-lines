@@ -15,9 +15,13 @@ with open("mylife.txt", "w") as input_file:
     
         # ask the user if he/she wants to add more lines
         yes_or_no = input("Are there more lines (y/n) ? ")
-        
+
         # write the input to mylife.txt
+        input_file.write(str(yes_or_no))
+
         # if yes
-        # continue
+        if yes_or_no.lower() == "y":
+            continue
+
         # if no
         # exit
