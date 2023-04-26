@@ -1,0 +1,1 @@
+Enter line: Charles David BernidoAre there more lines (y/n)? & C:/Users/berni/AppData/Local/Programs/Python/Python310/python.exe "e:/BSCPE 1ST YEAR 2ND SEM/OOP/ASSIGNMENT 4/write-multiple-lines/write multiple lines.py"
