@@ -6,6 +6,22 @@ import time
 import pyfiglet
 from colorama import Fore, Style
 
+def intro():
+    # Use pyfiglet formatting to Assignment # 4"
+    print("")
+    lab = pyfiglet.figlet_format("MULTIPLE LINES", font = "banner3-d", width = 130, justify = "center")
+    print(Style.BRIGHT + Fore.GREEN + lab)
+
+    # format introductory message
+    print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
+    intro = "INSTRUCTION: ENTER ANY WORD/ PHRASE. TYPE 'Y' TO CONTINUE, TYPE 'N' TO STOP." 
+    intro_centered = intro.center(130)
+    print( "\033[1m" + intro_centered) 
+    print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m' + "\n")
+
+    # insert time delay
+    time.sleep(1.5)
+
 def main():
     # Open mylife.txt (write)
     with open("mylife.txt", "w") as input_file:
