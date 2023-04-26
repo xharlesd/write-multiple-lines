@@ -2,6 +2,9 @@
 # Object Oriented Programming | Assignment 4 - Problem 3
 # Write a method in python to write multiple line of text contents into a text file mylife.txt
 
+import time
+import pyfiglet
+from colorama import Fore, Style
 
 def main():
     # Open mylife.txt (write)
