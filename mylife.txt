@@ -1,6 +1,4 @@
-Enter line: charles david bernido
-Are there more lines (y/n)? y
 Enter line: charles
 Are there more lines (y/n)? y
-Enter line: charles
-Are there more lines (y/n)? ddddd
+Enter line: asdfj
+Are there more lines (y/n)? n

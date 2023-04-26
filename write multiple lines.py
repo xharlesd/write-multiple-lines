@@ -46,16 +46,27 @@ def main():
 
             # if no
             elif yes_or_no.lower().strip() == "n":
-                time.sleep(3.5)
-                print(Fore.MAGENTA + "\n\t\t\t[Program will be terminated..............................] \n")
+                time.sleep(3)
+                print(Fore.CYAN + "\n\t\t\t[Program will be terminated..............................] \n")
                 time.sleep(2)
-                exit()
+                break
 
             # if the user failed to enter y or n
             else:
-                print(Fore.MAGENTA + "\n\t\t\t[ERROR! Invalid input. The program will be terminated....]")
-                exit()
+                time.sleep(3)
+                print(Fore.CYAN + "\n\t\t\t[ERROR! Invalid input. The program will be terminated....]")
+                time.sleep(2)
+                break
+
+def outro():
+    print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
+    print(" ")
+    lab = pyfiglet.figlet_format("   THANK YOU!   ", font = "banner3",  width = 130, justify = "center")
+    print(Style.BRIGHT + Fore.GREEN + lab)
+    exit()
+
 
 # start
 intro()
 main()
+outro()
