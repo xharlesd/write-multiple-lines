@@ -1,4 +1,8 @@
 Enter line: charles
 Are there more lines (y/n)? y
-Enter line: asdfj
+Enter line: davi
+Are there more lines (y/n)? y
+Enter line: d
+Are there more lines (y/n)? y
+Enter line: YEAAAAAAAA
 Are there more lines (y/n)? n

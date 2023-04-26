@@ -6,6 +6,7 @@ import time
 import pyfiglet
 from colorama import Fore, Style
 
+
 def intro():
     # Use pyfiglet formatting to Assignment # 4"
     print("")
@@ -21,6 +22,7 @@ def intro():
 
     # insert time delay
     time.sleep(1.5)
+
 
 def main():
     # Open mylife.txt (write)
@@ -57,6 +59,7 @@ def main():
                 print(Fore.CYAN + "\n\t\t\t[ERROR! Invalid input. The program will be terminated....]")
                 time.sleep(2)
                 break
+
 
 def outro():
     print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
