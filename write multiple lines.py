@@ -14,7 +14,7 @@ def intro():
 
     # format introductory message
     print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
-    intro = "INSTRUCTION: ENTER ANY WORD/ PHRASE. TYPE 'Y' TO CONTINUE, TYPE 'N' TO STOP." 
+    intro = "INSTRUCTION: ENTER ANY WORD/ PHRASE. TYPE 'y' TO CONTINUE, TYPE 'n' TO STOP." 
     intro_centered = intro.center(130)
     print( "\033[1m" + intro_centered) 
     print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
@@ -39,7 +39,7 @@ def main():
 
             # write the input to mylife.txt
             input_file.write("Are there more lines (y/n)? " + str(yes_or_no) + "\n")
-
+            
             # if yes
             if yes_or_no.lower().strip() == "y":
                 continue
@@ -47,14 +47,14 @@ def main():
             # if no
             elif yes_or_no.lower().strip() == "n":
                 time.sleep(3.5)
-                print(Fore.BLUE + "\n\t\t\t[Program will be terminated..............] \n")
+                print(Fore.MAGENTA + "\n\t\t\t[Program will be terminated..............................] \n")
                 time.sleep(2)
                 exit()
 
             # if the user failed to enter y or n
             else:
-                print("ERROR! Invalid input. Please choose either y or n only. ")
-                continue
+                print(Fore.MAGENTA + "\n\t\t\t[ERROR! Invalid input. The program will be terminated....]")
+                exit()
 
 # start
 intro()
