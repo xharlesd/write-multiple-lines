@@ -17,7 +17,7 @@ def intro():
     intro = "INSTRUCTION: ENTER ANY WORD/ PHRASE. TYPE 'Y' TO CONTINUE, TYPE 'N' TO STOP." 
     intro_centered = intro.center(130)
     print( "\033[1m" + intro_centered) 
-    print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m' + "\n")
+    print(Fore.GREEN + "\033[1m-" * 130 + '\033[0m')
 
     # insert time delay
     time.sleep(1.5)
@@ -29,29 +29,33 @@ def main():
         # Create a loop
         while True:
             # Ask for user input
-            user_input = input("\nEnter line: ")
+            user_input = input(Fore.GREEN + "\033[1m\n\t\t\tENTER LINE:  \033[0m" + Fore.YELLOW)
 
             # write the input to mylife.txt
-            input_file.write("Enter line: " + str(user_input))
+            input_file.write("Enter line: " + str(user_input) + "\n")
         
             # ask the user if he/she wants to add more lines
-            yes_or_no = input("Are there more lines (y/n)? ")
+            yes_or_no = input(Fore.GREEN + "\033[1m\t\t\tAre there more lines (y/n)?  \033[0m" + Fore.YELLOW)
 
             # write the input to mylife.txt
             input_file.write("Are there more lines (y/n)? " + str(yes_or_no) + "\n")
 
             # if yes
-            if yes_or_no.lower() == "y":
+            if yes_or_no.lower().strip() == "y":
                 continue
 
             # if no
-            elif yes_or_no.lower() == "n":
-                print("Thanks for using my program!")
+            elif yes_or_no.lower().strip() == "n":
+                time.sleep(3.5)
+                print(Fore.BLUE + "\n\t\t\t[Program will be terminated..............] \n")
+                time.sleep(2)
                 exit()
 
             # if the user failed to enter y or n
             else:
                 print("ERROR! Invalid input. Please choose either y or n only. ")
-                break
+                continue
 
+# start
+intro()
 main()
